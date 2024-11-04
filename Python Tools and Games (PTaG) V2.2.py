@@ -1,5 +1,25 @@
 import random, time
 
+print('''This is a
+
+ ██████╗ ██████╗ ██████╗ ██╗███╗   ██╗ ██████╗ 
+██╔════╝██╔═══██╗██╔══██╗██║████╗  ██║██╔════╝ 
+██║     ██║   ██║██║  ██║██║██╔██╗ ██║██║  ███╗
+██║     ██║   ██║██║  ██║██║██║╚██╗██║██║   ██║
+╚██████╗╚██████╔╝██████╔╝██║██║ ╚████║╚██████╔╝
+ ╚═════╝ ╚═════╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+                                               
+ ██████╗ █████╗ ████████╗███████╗              
+██╔════╝██╔══██╗╚══██╔══╝██╔════╝              
+██║     ███████║   ██║   ███████╗              
+██║     ██╔══██║   ██║   ╚════██║              
+╚██████╗██║  ██║   ██║   ███████║              
+ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝              
+
+Python Program - Enjoy!
+https://www.codingcats.co.uk (Copy and paste into browser, as it is marked as 'UNSECURED')''')
+time.sleep(4)
+
 print("\033[32mPython Tools and Games (PTaG)\033[34m\nV2.2")
 print("\033[31mAll answers must be copied \033[3mEXACTLY\033[23m how they are written! (Capitals do not matter).\nAlways use letters, unless told otherwise.\nYou can always press F5 to reset.\033[30m\n")
 start=input("Are you ready to start? Input 'Y' or 'N'\n")
