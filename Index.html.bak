@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!HTML 5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Unofficial) RSPCA Navigation Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="OIP.jfif">
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .links {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .invert-btn {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="links">
+            <p><a id="o" href="https://www.rspca.org.uk/" target="_blank">Main Page</a> | </p>
+            <p><a id="o" href="https://www.rspca.org.uk/getinvolved/donate/online" target="_blank">Donate</a> | </p>
+            <p><a id="o" href="https://www.rspca.org.uk/findapet" target="_blank">Find A Pet</a> | </p>
+            <p><a id="o" href="https://www.rspca.org.uk/whatwedo" target="_blank">What They Do</a> | </p>
+            <p><a id="o" href="https://www.rspca.org.uk/getinvolved" target="_blank">Get Involved</a> | </p>
+            <div class="dropdown">
+                <button class="dropbtn">My Other Sites</button>
+                <div class="dropdown-content">
+                    <a href="IndexCC.html" target="_blank">Coding Cats</a>
+                </div>
+            </div>
+        </div>
+        <button class="invert-btn" onclick="invertColors()">Invert Colours</button>
+    </div>
+    <div class="container">
+        <img src="th.jfif" height=350.6 width=220.0> </img>
+        <img src="WhoWeAre-Hero.jpg" height=350.6 width=526.16422302030605450923668823551> </img>
+        <h1>Welcome to the RSPCA Navigation Page!</h1>
+        <p>If you love pets, explore their site to learn more about them.<br>They love helping pets, and have been doing so since <a id="o" href="https://en.wikipedia.org/wiki/1824" target="_blank">1824</a>.<br></p>
+        <table style="text-align:center">
+            <tr>
+                <td><h2>Donate</h2>
+                    <p>On this page, you can donate monthly (£6, £13, or £25) or just a one time donation (£15, £30, or £100).</p></td>
+                <td><h2>Find A Pet</h2>
+                    <p>On this page, you can either adopt a pet, or just foster one to get them used to human care.<br>Either way, you will be a massive help to giving pets a new home.</p></td>
+            </tr>
+            <tr>
+                <td><h2>What They Do</h2>
+                    <p>On this page, you can find out the different ways the RSPCA rescues animals.</p></td>
+                <td><h2>Get Involved</h2>
+                    <p>On this page, you can see all the ways that you can help.</p></td>
+            </tr>
+        </table>
+        <section>
+            <h2><ins>Successes of 2024</ins></h2>
+            <ul>
+                <li>They celebrated 200 years</li>
+                <li>20,000 animals found forever homes</li>
+                <li>#BeAKindSpark launched - <a id="o" href="https://www.rspca.org.uk/" target="_blank">See more</a></li>
+                <li>34,000 hours volunteered</li>
+				<li>228 pet food banks set up</li>
+            </ul>
+        </section>
+        <section>
+            <h2><ins>FAQs</ins></h2>
+            <details>
+                <summary>What is RSPCA?</summary>
+                <p>• The Royal Society for the Prevention of Cruelty to Animals is a UK-based charity.</p>
+            </details>
+            <details>
+                <summary>How can I adopt a pet?</summary>
+                <p>• You can find more information on the "Find A Pet" page.</p>
+            </details>
+            <details>
+                <summary>How can I donate?</summary>
+                <p>• You can donate through our "Donate" page.</p>
+            </details>
+            <details>
+                <summary>How can I volunteer?</summary>
+                <p>• Information on volunteering can be found on our "Get Involved" page.</p>
+            </details>
+        </section>
+        <div class="testimonial-slider">
+            <h2><ins>What People Say</ins></h2>
+            <div class="slide">"RSPCA helped me find my best friend!" - John</div>
+            <div class="slide">"Their support is incredible." - Emily</div>
+            <div class="slide">"Thanks to RSPCA, I adopted a wonderful cat." - Sarah</div>
+            <div class="slide">"I love volunteering here." - Michael</div>
+        </div>
+		<br><br><h1><ins>Form</ins></h1>
+		<form name="Form1" method="post" action="Submitted.html">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value=""><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value=""><br><br>
+			<p>Do you have a pet?</p>
+			<input type="radio" id="yes" name="fav_language" value="">
+			<label for="yes">Yes</label><br>
+			<input type="radio" id="no" name="fav_language" value="">
+			<label for="no">No</label><br><br>
+			<input type="submit" value="Submit">
+		</form>
+    </div>
+    <!JAVASCRIPT>
+    <script>
+        function invertColors() {
+            let body = document.body;
+            body.style.backgroundColor = body.style.backgroundColor === 'blue' ? 'white' : 'blue';
+            body.style.color = body.style.color === 'white' ? 'blue' : 'white';
+            let navbar = document.querySelector('.navbar');
+            navbar.style.backgroundColor = navbar.style.backgroundColor === 'white' ? 'blue' : 'white';
+            navbar.style.color = navbar.style.color === 'blue' ? 'white' : 'blue';
+            let links = document.querySelectorAll('.navbar a');
+            links.forEach(link => {
+                link.style.color = link.style.color === 'blue' ? 'white' : 'blue';
+            });
+            let button = document.querySelector('.invert-btn');
+            button.style.backgroundColor = button.style.backgroundColor === 'white' ? 'blue' : 'white';
+            button.style.color = button.style.color === 'blue' ? 'white' : 'blue';
+        }
+    </script>
+</body>
+</html>

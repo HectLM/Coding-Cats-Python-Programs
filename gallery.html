@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Coding Cats</title>
+    <style>
+        body {
+            background-color: yellow;
+            color: blue;
+        }
+        .navbar {
+            background-color: blue;
+            color: yellow;
+            padding: 10px;
+        }
+        .navbar a {
+            color: yellow;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .invert-btn {
+            background-color: blue;
+            color: yellow;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .invert-btn:hover {
+            background-color: yellow;
+            color: blue;
+        }
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="cat-corner.html">Cat Corner</a>
+        <button class="invert-btn" onclick="invertColors()">Invert Colours</button>
+    </div>
+    <div class="container">
+        <h1>Gallery</h1>
+        <p>Here are some pictures of our feline friends and coding adventures.</p>
+    </div>
+    <script>
+        function invertColors() {
+            let body = document.body;
+            body.style.backgroundColor = body.style.backgroundColor === 'yellow' ? 'blue' : 'yellow';
+            body.style.color = body.style.color === 'blue' ? 'yellow' : 'blue';
+            let navbar = document.querySelector('.navbar');
+            navbar.style.backgroundColor = navbar.style.backgroundColor === 'blue' ? 'yellow' : 'blue';
+            navbar.style.color = navbar.style.color === 'yellow' ? 'blue' : 'yellow';
+            let links = document.querySelectorAll('.navbar a');
+            links.forEach(link => {
+                link.style.color = link.style.color === 'yellow' ? 'blue' : 'yellow';
+            });
+            let button = document.querySelector('.invert-btn');
+            button.style.backgroundColor = button.style.backgroundColor === 'blue' ? 'yellow' : 'blue';
+            button.style.color = button.style.color === 'yellow' ? 'blue' : 'yellow';
+        }
+    </script>
+</body>
+</html>
